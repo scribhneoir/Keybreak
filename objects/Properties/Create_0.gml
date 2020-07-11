@@ -17,7 +17,7 @@ DEAD_CONTROLS = ds_list_create()
 // Initialize assigned keys
 for (i = 0; i < 4; i++)
 {
-	var temp = instance_create_layer(GUI_x + (8 * i * 5), GUI_y, "Instances", obj_assigned_key)
+	var temp = instance_create_layer(GUI_x + (8 * i * 5), GUI_y -2, "Instances", obj_assigned_key)
 	ds_list_insert(KEY_DEATH_ORDER, 0, temp)
 }
 
