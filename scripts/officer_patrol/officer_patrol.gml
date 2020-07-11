@@ -1,7 +1,4 @@
-input_get()
-
 // Set movement speed
-hspd = walk_dir * spd;
 vspd += grav;
 
 // Horizontal Collision
@@ -9,10 +6,9 @@ if (place_meeting(x + hspd, y, obj_solid))
 {
 	while (!place_meeting(x+sign(hspd), y, obj_solid))
 		x += sign(hspd);
+	old_hspeed = hspd
 	hspd = 0
 	state = officer_pause
-	old_walk_dir = walk_dir
-	walk_dir = 0
 }
 x += hspd;
 
@@ -27,7 +23,7 @@ y += vspd;
 
 
 if (vspd == 0)
-	switch(walk_dir)
+	switch(sign(hspd))
 	{
 		case 1: sprite_index = spr_officer_walk_right; break;
 		case -1: sprite_index = spr_officer_walk_left; break;

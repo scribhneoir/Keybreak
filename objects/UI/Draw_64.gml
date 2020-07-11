@@ -1,5 +1,6 @@
+draw_set_colour(col)
 draw_sprite(spr_healthbar_head, 0, GUI_x, GUI_y)
-draw_text(GUI_x, GUI_y, Properties.KEYS_REMAINING) 
+draw_text(GUI_x, GUI_y - 5, Properties.KEYS_REMAINING) 
 
 //for (i = 0; i < 26; i++)
 	//draw_text(0, 0, ord("B"))

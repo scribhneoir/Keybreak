@@ -1,8 +1,7 @@
 spd = 7
 
-walk_dir = 1
-odl_walk_dir = -1
-hspd = 0
+old_hspeed = 0
+hspd = 1
 vspd = 0
 
 grav = 0.8
