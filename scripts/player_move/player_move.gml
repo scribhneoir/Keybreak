@@ -32,7 +32,7 @@ y += vspd;
 
 if (vspd == 0)
 {
-	switch(sign(hspd))
+	switch(walk_dir)
 	{
 		case 1: sprite_index = spr_player_walk_right; break;
 		case -1: sprite_index = spr_player_walk_left; break;
