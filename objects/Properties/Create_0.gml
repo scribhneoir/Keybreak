@@ -10,6 +10,7 @@ KEYS_REMAINING = 26
 // KEY_DEATH_ORDER configures which key will be eliminated next
 CONTROLS = ["J", "H", "A", "D"]
 KEY_DEATH_ORDER = ds_list_create()
+DEAD_CONTROLS = ds_list_create()
 
 #region Initial Assignments
 
@@ -24,7 +25,7 @@ for (i = 0; i < 4; i++)
 var temp_key = ds_list_find_value(KEY_DEATH_ORDER, 0)
 temp_key.index = 0
 temp_key.key = "J"
-array_set(self.AVAILABLE_KEYS, 8, false)
+array_set(self.AVAILABLE_KEYS, 9, false)
 
 // Default Attack
 temp_key = ds_list_find_value(KEY_DEATH_ORDER, 1)

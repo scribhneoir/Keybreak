@@ -1,7 +1,7 @@
 spd = 7
 
 walk_dir = 1
-odl_walk_dir = -1
+old_walk_dir = -1
 hspd = 0
 vspd = 0
 

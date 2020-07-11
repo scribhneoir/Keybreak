@@ -1,4 +1,4 @@
-if (obj_player.REMAP)
+if (obj_player.remap_open)
 {
 	for (i = 0; i < 26; i++)
 	{

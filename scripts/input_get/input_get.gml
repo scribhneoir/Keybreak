@@ -1,5 +1,5 @@
 PAUSE = keyboard_check(vk_escape)
-REMAP = keyboard_check(vk_space)
+TOGGLE_REMAP = keyboard_check_pressed(vk_space)
 
 JUMP = keyboard_check_pressed(ord(Properties.CONTROLS[0]))
 ATTACK = keyboard_check_pressed(ord(Properties.CONTROLS[1]))

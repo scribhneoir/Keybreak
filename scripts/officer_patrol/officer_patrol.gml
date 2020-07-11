@@ -1,4 +1,4 @@
-input_get()
+//input_get()
 
 // Set movement speed
 hspd = walk_dir * spd;
