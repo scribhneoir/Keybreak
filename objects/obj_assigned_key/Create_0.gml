@@ -1,3 +1,4 @@
-hp = 10
-name = "default"
+hp = 5
+index = 0
 key = "none"
+draw = true

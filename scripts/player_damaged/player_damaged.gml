@@ -5,15 +5,20 @@ if (damage_applied == false)
 	sprite_index = spr_player_damaged
 
 	// Get current key and reduce health
-	var curr_key = ds_list_find_value(Properties.ASSIGNED_KEYS, 0)
+	var curr_key = ds_list_find_value(Properties.KEY_DEATH_ORDER, 0)
 
 	// Reduce key health
 	curr_key.hp--
 
-	// If health has run out, remove it from ASSIGNED_KEYS
+	// If health has run out, remove it from KEY_DEATH_ORDER
+	// Set proper index of CONTROLS to vk_nokey
 	if (curr_key.hp <= 0)
 	{
-		curr_key = ds_list_delete(Properties.ASSIGNED_KEYS, 0)
+		curr_key = ds_list_find_value(Properties.KEY_DEATH_ORDER, 0)
+		ds_list_delete(Properties.KEY_DEATH_ORDER, 0)
+		Properties.KEYS_REMAINING--
+		Properties.CONTROLS[curr_key.index] = vk_nokey
+		curr_key.draw = false
 	}
 
 	// Set alarm to revert player state

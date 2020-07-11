@@ -3,10 +3,10 @@ x_pos = 200
 y_pos = 200
 
 // Dimensions of keys on sprite
-sprite_key_size = 20
+key_size = 21
 
 // Vertical offset for rows of keys
-y1 = 40; y2 = 63 y3 = 86;
+y1 = 40; y2 = 63; y3 = 86;
 
 // Horizontal offset to count from
 x1 = 30; x2 = 36; x3 = 46;
@@ -16,11 +16,11 @@ x1 = 30; x2 = 36; x3 = 46;
 for (i = 0; i < 26; i++)
 {
 	if (i <= 9)
-		KEYS[i, 0] = x1 + (i * sprite_key_size)
+		KEYS[i, 0] = x + x1 + (i * (key_size + 2))
 	else if (i <= 18)
-		KEYS[i, 0] = x2 + ((i%10) * sprite_key_size)
+		KEYS[i, 0] = x + x2 + ((i%10) * (key_size + 2))
 	else if (i <= 25)
-		KEYS[i, 0] = x3 + ((i%19) * sprite_key_size)
+		KEYS[i, 0] = x + x3 + ((i%19) * (key_size + 2))
 }
 
 KEYS[0, 1] = ord("Q") - 65; KEYS[1, 1] = ord("W") - 65; KEYS[2, 1] = ord("E") - 65;
