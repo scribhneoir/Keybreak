@@ -8,4 +8,7 @@ grav = 0.8
 jump_height = -15
 
 state = player_move
-next_key = ds_list_find_value(Properties.ASSIGNED_KEYS, 0)
+//next_key = ds_list_find_value(Properties.ASSIGNED_KEYS, 0)
+
+// Used to apply damage exactly once
+damage_applied = false

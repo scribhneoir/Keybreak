@@ -1,8 +1,15 @@
+// Offsets for the keys & health
 GUI_x = 81
 GUI_y = 60
+
+// How many & which keys are left
 AVAILABLE_KEYS[26] = true
 KEYS_REMAINING = 26
-ASSIGNED_KEYS = ds_list_create()
+
+// input_get reads from CONTROLS to connect keys with action variables
+// KEY_DEATH_ORDER configures which key will be eliminated next
+CONTROLS = ["J", "H", "A", "D"]
+KEY_DEATH_ORDER = ds_list_create()
 
 #region Initial Assignments
 
@@ -10,11 +17,11 @@ ASSIGNED_KEYS = ds_list_create()
 for (i = 0; i < 4; i++)
 {
 	var temp = instance_create_layer(GUI_x + (80 * i), GUI_y, "Instances", obj_assigned_key)
-	ds_list_insert(ASSIGNED_KEYS, 0, temp)
+	ds_list_insert(KEY_DEATH_ORDER, 0, temp)
 }
 
 // Default Jump
-with (ds_list_find_value(ASSIGNED_KEYS, 0))
+with (ds_list_find_value(KEY_DEATH_ORDER, 0))
 {
 	name = "JUMP"
 	key = "J"
@@ -22,7 +29,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 0))
 }
 
 // Default Attack
-with (ds_list_find_value(ASSIGNED_KEYS, 1))
+with (ds_list_find_value(KEY_DEATH_ORDER, 1))
 {
 	name = "ATTACK"
 	key = "H"
@@ -30,7 +37,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 1))
 }
 
 // Default Right
-with (ds_list_find_value(ASSIGNED_KEYS, 2))
+with (ds_list_find_value(KEY_DEATH_ORDER, 2))
 {
 	name = "RIGHT"
 	key = "A"
@@ -38,7 +45,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 2))
 }
 
 // Default Left
-with (ds_list_find_value(ASSIGNED_KEYS, 3))
+with (ds_list_find_value(KEY_DEATH_ORDER, 3))
 {
 	name = "LEFT"
 	key = "D"

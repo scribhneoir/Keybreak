@@ -386,17 +386,17 @@
             "Key": "febd518a-3e5c-4cc6-a7dc-9bb753807d66",
             "Value": {
                 "id": "95b6e1bd-618b-46a4-ac04-c7309a11259a",
-                "resourcePath": "scripts\\reassign_key\\reassign_key.yy",
+                "resourcePath": "scripts\\reassign_action\\reassign_action.yy",
                 "resourceType": "GMScript"
             }
         }
     ],
     "script_order": [
         "5c9982b2-d128-4290-be26-c479baee869e",
-        "febd518a-3e5c-4cc6-a7dc-9bb753807d66",
         "a039a09b-ee58-4523-8e55-ac3a2d38c1ed",
         "232b9658-e92f-4602-bbd9-f613154e66cf",
-        "b76fb778-28b8-448b-a3a6-ab9b80e561d2"
+        "b76fb778-28b8-448b-a3a6-ab9b80e561d2",
+        "febd518a-3e5c-4cc6-a7dc-9bb753807d66"
     ],
     "tutorial": ""
 }
