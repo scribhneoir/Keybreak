@@ -9,8 +9,8 @@ ASSIGNED_KEYS = ds_list_create()
 // Initialize assigned keys
 for (i = 0; i < 4; i++)
 {
-	var temp = instance_create_layer(GUI_x + (8 * i), 100, "Instances", obj_assigned_key)
-	ds_list_add(ASSIGNED_KEYS, temp)
+	var temp = instance_create_layer(GUI_x + (80 * i), GUI_y, "Instances", obj_assigned_key)
+	ds_list_insert(ASSIGNED_KEYS, 0, temp)
 }
 
 // Default Jump

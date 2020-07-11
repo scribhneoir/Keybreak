@@ -1,3 +1,3 @@
-hp = 100
+hp = 10
 name = "default"
 key = "none"
