@@ -31,11 +31,15 @@ y += vspd;
 
 
 if (vspd == 0)
-{
 	switch(walk_dir)
 	{
 		case 1: sprite_index = spr_player_walk_right; break;
 		case -1: sprite_index = spr_player_walk_left; break;
 		case 0: sprite_index = spr_player_idle; break;
 	}
-}
+else
+	switch(walk_dir)
+	{
+		case 1: image_index = 2; break;
+		case -1: image_index = 1; break;
+	}

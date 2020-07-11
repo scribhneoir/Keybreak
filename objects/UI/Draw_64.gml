@@ -1,4 +1,6 @@
 draw_sprite(spr_healthbar_head, 0, GUI_x, GUI_y)
+//for (i = 0; i < 26; i++)
+	//draw_text(0, 0, ord("B"))
 
 /*
 for (i = 0; i < Properties.KEYS_REMAINING; i++)

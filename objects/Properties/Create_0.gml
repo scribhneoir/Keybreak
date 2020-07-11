@@ -18,7 +18,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 0))
 {
 	name = "JUMP"
 	key = "J"
-	AVAIALABE_KEYS[8] = false
+	AVAILABLE_KEYS[8] = false
 }
 
 // Default Attack
@@ -26,7 +26,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 1))
 {
 	name = "ATTACK"
 	key = "H"
-	AVAIALABE_KEYS[7] = false
+	AVAILABLE_KEYS[7] = false
 }
 
 // Default Right
@@ -34,7 +34,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 2))
 {
 	name = "RIGHT"
 	key = "A"
-	AVAIALABE_KEYS[0] = false
+	AVAILABLE_KEYS[0] = false
 }
 
 // Default Left
@@ -42,7 +42,7 @@ with (ds_list_find_value(ASSIGNED_KEYS, 3))
 {
 	name = "LEFT"
 	key = "D"
-	AVAIALABE_KEYS[3] = false
+	AVAILABLE_KEYS[3] = false
 }
 
 #endregion
