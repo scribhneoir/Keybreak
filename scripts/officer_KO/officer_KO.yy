@@ -1,5 +1,5 @@
 {
-    "id": "dfcdef4a-6d40-4583-adfa-86e3a4d2e589",
+    "id": "f888e6ac-e3a0-4e3e-ba62-124c931b46f6",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "officer_KO",

@@ -2,7 +2,6 @@
 state = player_move
 if (damage_applied == true){
 	damage_applied = false
-	kback = 10;
 }
 if (attacked == true){
 	attacked = false

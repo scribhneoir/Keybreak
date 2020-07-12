@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "f888e6ac-e3a0-4e3e-ba62-124c931b46f6",
+            "Value": {
+                "id": "0843782b-de83-4e05-a896-0def492981af",
+                "resourcePath": "scripts\\officer_KO\\officer_KO.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fe7de2d8-14d2-49bf-9a4f-f03bd3ad33bd",
             "Value": {
                 "id": "abb67287-297c-4a50-8ba6-67d60ce7c4bf",
@@ -849,6 +857,7 @@
         "19f5f2a3-a4be-4c0a-bb52-bca2c209da25",
         "27dde5d4-22ee-4dfe-8350-227d9fb61660",
         "f3bf37d7-5365-4d52-8a3e-5edc760315c5",
+        "f888e6ac-e3a0-4e3e-ba62-124c931b46f6",
         "0fc53476-832a-469f-b129-9a22cd99a16b",
         "5f1c0b59-9251-4071-a2f0-58f4b2ca9baf"
     ],
