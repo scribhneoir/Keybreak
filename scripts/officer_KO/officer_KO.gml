@@ -4,6 +4,7 @@ if(attack_dir == 1)
 	image_index = 1
 
 vspd += grav;
+hspd = 0
 
 // Horizontal Collision
 if (place_meeting(x + hspd, y, obj_solid))
@@ -14,7 +15,7 @@ if (place_meeting(x + hspd, y, obj_solid))
 	hspd = 0
 	state = officer_pause
 }
-x += hspd;
+
 
 // Vertical Collision
 if (place_meeting(x, y + vspd, obj_solid))
