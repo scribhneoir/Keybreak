@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-
-
-if(locked){
-	
-}
-else{
-	
-}
-=======
 if (place_meeting(x, y, obj_player)) {
 
 	// Create textbox
@@ -23,4 +13,3 @@ else {
 	instance_destroy(textbox)
 	textbox = noone
 }
->>>>>>> 0a2e408601ec8d680b263e0fd6fc93a17677a777

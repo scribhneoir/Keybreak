@@ -11,7 +11,8 @@
         "baa9eec4-d147-4dfa-8779-692ebd6f9a66",
         "dd8ab84b-6d22-4b92-b5cc-f40969e6c67a",
         "eee30bcf-df08-4db5-810b-d52e2aef4d76",
-        "c4757ecb-5288-449b-8890-37334957fabb"
+        "c4757ecb-5288-449b-8890-37334957fabb",
+        "ceae465b-b876-44ac-9ad3-62c3699f19c0"
     ],
     "filterType": "GMSprite",
     "folderName": "Officer",
