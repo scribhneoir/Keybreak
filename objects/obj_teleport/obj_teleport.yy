@@ -5,7 +5,7 @@
     "name": "obj_teleport",
     "eventList": [
         {
-            "id": "fad105ed-09dd-4ed1-9efc-434ea6858123",
+            "id": "61f2bcad-4206-4896-9e36-e7c397c107aa",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,7 +15,7 @@
             "m_owner": "668f399b-767c-4998-a368-852a622e8712"
         },
         {
-            "id": "be0e220a-8c1c-45f1-888c-fb08a10631ae",
+            "id": "6ad5bf32-6b70-4b64-bf73-513b5bc73681",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -28,7 +28,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "359c48ef-56e8-4ddb-85e6-ce7d82479cff",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
