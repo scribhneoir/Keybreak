@@ -6,5 +6,5 @@ for (i = 0; i < list_size; i++)
 	if (i == list_size - 1)
 		curr.x = Properties.GUI_x
 	else
-		curr.x += 40
+		curr.x += 32
 }

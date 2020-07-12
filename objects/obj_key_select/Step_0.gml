@@ -12,7 +12,7 @@ if (obj_player.remap_open)
 			// Add to the back of the health bar
 			ds_list_add(Properties.KEY_DEATH_ORDER, action)
 			action.draw = true
-			action.hp = 5
+			action.hp = 2
 			order_keys()
 		
 			// Remove from dead list

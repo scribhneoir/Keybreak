@@ -1,4 +1,4 @@
-hp = 5
+hp = 2
 
 /*	Value set in the create event of Properties
 	0 = jumping
