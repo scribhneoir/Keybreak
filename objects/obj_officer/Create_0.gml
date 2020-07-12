@@ -1,4 +1,5 @@
 spd = 7
+hp = 2;
 
 old_hspeed = 1
 hspd = -1
