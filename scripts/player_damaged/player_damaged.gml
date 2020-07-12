@@ -30,10 +30,13 @@ if (!damage_applied)
 		curr_key.draw = false
 		*/
 	}
+	if(ds_list_size(Properties.KEY_DEATH_ORDER) == 0){
+		room_goto(7)
+	}
 	damage_applied = true;
 }
 
-if(image_index == 6){
+if(image_index >= 5){
 	alarm[0] = 10;
 }
 

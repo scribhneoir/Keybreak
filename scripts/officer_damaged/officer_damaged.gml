@@ -14,7 +14,7 @@ if (!damage_applied)
 	damage_applied = true;
 }
 
-if(image_index == 6){
+if(image_index <= 5){
 	alarm[0] = 10;
 }
 
