@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "27dde5d4-22ee-4dfe-8350-227d9fb61660",
+            "Value": {
+                "id": "d55e20f7-608d-4763-bb46-2220b157fbca",
+                "resourcePath": "scripts\\officer_attack\\officer_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2984eb46-2bd0-4062-83dc-673d75646a67",
             "Value": {
                 "id": "97227a9c-0f54-4cec-b670-43a41b182b49",
@@ -799,6 +807,7 @@
         "98591441-9e32-4427-8759-eb52484cf369",
         "b7081c0a-c078-4f41-941a-a647e1801cb2",
         "19f5f2a3-a4be-4c0a-bb52-bca2c209da25",
+        "27dde5d4-22ee-4dfe-8350-227d9fb61660",
         "0fc53476-832a-469f-b129-9a22cd99a16b",
         "5f1c0b59-9251-4071-a2f0-58f4b2ca9baf"
     ],

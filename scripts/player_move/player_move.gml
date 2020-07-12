@@ -18,7 +18,11 @@ if (place_meeting(x + sign(hspd), y, obj_door) && vspd == 0)
 	var door = instance_nearest(x, y, obj_door)
 	door.active = true
 }
-
+//Get punched by officer
+if (place_meeting(x + sign(hspd), y, obj_officer) && obj_officer.state = officer_attack){
+	state = player_damaged
+	attack_dir = obj_officer.attack_dir
+}
 
 // Jumping
 if (place_meeting(x, y + 1, obj_solid) && (JUMP))
