@@ -5,6 +5,9 @@ if(damage_applied){
 		damage_applied = false;
 		room_goto_next()
 	}
-	else
-		x+=2
+	else{
+		x+=back
+		if(back >0)
+			back --
+	}
 }

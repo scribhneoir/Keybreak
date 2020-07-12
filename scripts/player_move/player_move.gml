@@ -33,6 +33,12 @@ if (place_meeting(x + hspd, y, obj_solid))
 		x += sign(hspd);
 	hspd = 0
 }
+if (place_meeting(x + hspd, y, obj_door))
+{
+	while (!place_meeting(x+sign(hspd), y, obj_door))
+		x += sign(hspd);
+	hspd = 0
+}
 x += hspd;
 
 // Vertical Collision

@@ -1,4 +1,4 @@
-if (place_meeting(x, y, obj_player)) {
+if (active) {
 
 	// Create textbox
 	if (textbox == noone) {
@@ -7,6 +7,7 @@ if (place_meeting(x, y, obj_player)) {
 		textbox.cr_name = "Locked Door"
 		textbox.text[textbox.page] = my_text[textbox.page]	// Only need to set the first page here
 	}
+	alarm[0] = 50;
 }
 
 else {
