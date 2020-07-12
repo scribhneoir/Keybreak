@@ -1,5 +1,6 @@
 spd = 7
 
+attack_dir = 1
 kback = 10;
 face_dir = 1	// -1 or 1
 walk_dir = 0	// -1, 1, or 0

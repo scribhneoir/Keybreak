@@ -12,3 +12,6 @@ if (pause == true){
 	hspd = -old_hspeed
 	x +=5*hspd
 }
+if(hp <= 0){
+	state = officer_KO
+}
