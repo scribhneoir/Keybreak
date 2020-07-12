@@ -1,6 +1,6 @@
 // Where object appears for reassigning
-x_pos = 200
-y_pos = 200
+x = room_width/2 - sprite_width/2
+y = room_height/2 - sprite_height/2
 
 // Dimensions of keys on sprite
 key_size = 21
@@ -11,24 +11,58 @@ y1 = 40; y2 = 63; y3 = 86;
 // Horizontal offset to count from
 x1 = 30; x2 = 36; x3 = 46;
 
+// Array of obj_key_select
+KEY_FLAGS = array_create(26)
 
 // Initialise key array
 for (i = 0; i < 26; i++)
 {
+	var xcor = x
+	var ycor = y
 	if (i <= 9)
-		KEYS[i, 0] = x + x1 + (i * (key_size + 2))
+	{
+		 xcor = x + x1 + (i * (key_size + 2))
+		 ycor += y1
+	}
 	else if (i <= 18)
-		KEYS[i, 0] = x + x2 + ((i%10) * (key_size + 2))
+	{
+		 xcor = x + x2 + ((i%10) * (key_size + 2))
+		 ycor += y2
+	}
 	else if (i <= 25)
-		KEYS[i, 0] = x + x3 + ((i%19) * (key_size + 2))
+	{
+		 xcor = x + x3 + ((i%19) * (key_size + 2))
+		 ycor += y3
+	}
+	
+	KEY_FLAGS[i] = instance_create_layer(xcor, ycor, "Instances", obj_key_select)
 }
 
-KEYS[0, 1] = ord("Q") - 65; KEYS[1, 1] = ord("W") - 65; KEYS[2, 1] = ord("E") - 65;
-KEYS[3, 1] = ord("R") - 65; KEYS[4, 1] = ord("T") - 65; KEYS[5, 1] = ord("Y") - 65;
-KEYS[6, 1] = ord("U") - 65; KEYS[7, 1] = ord("I") - 65; KEYS[8, 1] = ord("O") - 65;
-KEYS[9, 1] = ord("P") - 65; KEYS[10, 1] = ord("A") - 65; KEYS[11, 1] = ord("S") - 65;
-KEYS[12, 1] = ord("D") - 65; KEYS[13, 1] = ord("F") - 65; KEYS[14, 1] = ord("G") - 65;
-KEYS[15, 1] = ord("H") - 65; KEYS[16, 1] = ord("J") - 65; KEYS[17, 1] = ord("K") - 65;
-KEYS[18, 1] = ord("L") - 65; KEYS[19, 1] = ord("Z") - 65; KEYS[20, 1] = ord("X") - 65;
-KEYS[21, 1] = ord("C") - 65; KEYS[22, 1] = ord("V") - 65; KEYS[23, 1] = ord("B") - 65;
-KEYS[24, 1] = ord("N") - 65; KEYS[25, 1] = ord("M") - 65; 
+// Initialize IDs
+KEY_FLAGS[0].key_id = "Q"; KEY_FLAGS[1].key_id = "W"; KEY_FLAGS[2].key_id = "E";
+KEY_FLAGS[3].key_id = "R"; KEY_FLAGS[4].key_id = "T"; KEY_FLAGS[5].key_id = "Y";
+KEY_FLAGS[6].key_id = "U"; KEY_FLAGS[7].key_id = "I"; KEY_FLAGS[8].key_id = "O";
+KEY_FLAGS[9].key_id = "P"; KEY_FLAGS[10].key_id = "A"; KEY_FLAGS[11].key_id = "S";
+KEY_FLAGS[12].key_id = "D"; KEY_FLAGS[13].key_id = "F"; KEY_FLAGS[14].key_id = "G";
+KEY_FLAGS[15].key_id = "H"; KEY_FLAGS[16].key_id = "J"; KEY_FLAGS[17].key_id = "K";
+KEY_FLAGS[18].key_id = "L"; KEY_FLAGS[19].key_id = "Z"; KEY_FLAGS[20].key_id = "X";
+KEY_FLAGS[21].key_id = "C"; KEY_FLAGS[22].key_id = "V"; KEY_FLAGS[23].key_id = "B";
+KEY_FLAGS[24].key_id = "N"; KEY_FLAGS[25].key_id = "M";
+
+// Set default keys states to 1
+KEY_FLAGS[10].state = 1
+KEY_FLAGS[12].state = 1
+KEY_FLAGS[15].state = 1
+KEY_FLAGS[16].state = 1
+
+/*
+// Initialize IDs
+KEY_FLAGS[0].key_id = "A"; KEY_FLAGS[1].key_id = "B"; KEY_FLAGS[2].key_id = "C";
+KEY_FLAGS[3].key_id = "D"; KEY_FLAGS[4].key_id = "E"; KEY_FLAGS[5].key_id = "F";
+KEY_FLAGS[6].key_id = "G"; KEY_FLAGS[7].key_id = "H"; KEY_FLAGS[8].key_id = "I";
+KEY_FLAGS[9].key_id = "J"; KEY_FLAGS[10].key_id = "K"; KEY_FLAGS[11].key_id = "L";
+KEY_FLAGS[12].key_id = "M"; KEY_FLAGS[13].key_id = "N"; KEY_FLAGS[14].key_id = "O";
+KEY_FLAGS[15].key_id = "P"; KEY_FLAGS[16].key_id = "Q"; KEY_FLAGS[17].key_id = "R";
+KEY_FLAGS[18].key_id = "S"; KEY_FLAGS[19].key_id = "T"; KEY_FLAGS[20].key_id = "U";
+KEY_FLAGS[21].key_id = "V"; KEY_FLAGS[22].key_id = "W"; KEY_FLAGS[23].key_id = "X";
+KEY_FLAGS[24].key_id = "Y"; KEY_FLAGS[25].key_id = "Z";*/

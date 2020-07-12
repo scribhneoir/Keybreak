@@ -19,6 +19,7 @@ if (damage_applied == false)
 		Properties.KEYS_REMAINING--
 		Properties.CONTROLS[curr_key.index] = vk_nokey
 		curr_key.draw = false
+		//obj_remapping.KEY_FLAGS[ord(curr_key.key) - 65].state++
 	}
 
 	// Set alarm to revert player state

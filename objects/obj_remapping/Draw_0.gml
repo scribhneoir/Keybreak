@@ -1,23 +1,18 @@
 if (obj_player.remap_open)
 {
-	for (i = 0; i < 26; i++)
-	{
-		var curr_y = y
-		if (i <= 9)
-			curr_y += y1
-		else if (i <= 18)
-			curr_y += y2
-		else if (i <= 25)
-			curr_y += y3
-		
-		
-		if (Properties.AVAILABLE_KEYS[KEYS[i, 1]])
-			draw_set_color(c_blue)
-		else
-			draw_set_color(c_maroon)
-		
-		draw_rectangle(KEYS[i, 0], curr_y, KEYS[i, 0] + key_size, curr_y + key_size, 0)
-	}
+	#region Transparant background
 	
+	draw_set_alpha(0.5)
+	draw_set_color(c_black)
+	draw_rectangle(0, 0, room_width, room_height, 0)
+	
+	draw_set_alpha(0.5)
+	draw_set_color(c_white)
+	draw_rectangle(bbox_left - 100, bbox_top - 100, bbox_right + 100, bbox_bottom + 100, 0)
+	
+	draw_set_alpha(1)
+	
+	#endregion
+		
 	draw_self()
 }

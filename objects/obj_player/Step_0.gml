@@ -2,7 +2,7 @@ script_execute(state)
 
 if (TOGGLE_REMAP)
 	remap_open = !remap_open
-
+/*
 if (remap_open)
 {
 	if (!ds_list_empty(Properties.DEAD_CONTROLS))
@@ -18,4 +18,4 @@ if (remap_open)
 				Properties.AVAILABLE_KEYS[ord(new_key) - 65] = false
 			}
 	}
-}
+}*/

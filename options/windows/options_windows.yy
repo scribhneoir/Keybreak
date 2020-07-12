@@ -10,7 +10,7 @@
     "option_windows_copyright_info": "(c) 2020 LodeStar Productions",
     "option_windows_description_info": "A game made for GMTK 2020",
     "option_windows_disable_sandbox": false,
-    "option_windows_display_cursor": false,
+    "option_windows_display_cursor": true,
     "option_windows_display_name": "KeyBreak",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "KeyBreak",
