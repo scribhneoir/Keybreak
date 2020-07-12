@@ -21,6 +21,11 @@ if (place_meeting(x, y + vspd, obj_solid))
 }
 y += vspd;
 
+if (place_meeting(x + sign(hspd), y, obj_player) && obj_player.state = player_attack){
+	state = officer_damaged
+	attack_dir = obj_player.face_dir
+}
+
 //attack if in range
 if(obj_player.state != player_damaged && obj_player.x > x - 60 && obj_player.x < x && sign(hspd) == -1 && obj_player.y > y - 30 &&obj_player.y < y + 30){
 	attack_dir = -1

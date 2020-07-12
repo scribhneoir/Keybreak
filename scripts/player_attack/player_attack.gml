@@ -1,13 +1,15 @@
 if(!attacked){
-	
-	switch (face_dir)
-	{
-		case -1: sprite_index = spr_player_punch_left; break;
-		case 1: sprite_index = spr_player_punch_right; break;
+	if(sprite_index != spr_player_punch_right && face_dir == 1)
+		sprite_index = spr_player_punch_right;
+	if(sprite_index != spr_player_punch_left && face_dir == -1)
+	sprite_index = spr_player_punch_left;
+	if(image_index == 2){
+		attacked = true;
+		alarm[0] = 20;
 	}
-
-	alarm[0] = 20
-	attacked = true
+}
+if(attacked){
+	image_index = 2
 }
 
 if (place_meeting(x, y + vspd, obj_solid))
