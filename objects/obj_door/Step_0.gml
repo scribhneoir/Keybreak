@@ -1,0 +1,8 @@
+
+
+if(locked){
+	
+}
+else{
+	
+}

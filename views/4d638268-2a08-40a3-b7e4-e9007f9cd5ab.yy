@@ -5,12 +5,13 @@
     "name": "4d638268-2a08-40a3-b7e4-e9007f9cd5ab",
     "children": [
         "5a0dafb0-b494-49a8-9492-4dbd3aaa74cb",
-        "fbcde8af-8f36-4356-9d9c-6f7f5b4811f5",
-        "2cc127da-c98d-4694-897c-93955d5dba10",
-        "0a671eac-4c5a-4884-b5e2-9549f1cabd5d",
-        "834c0880-c037-45b6-80c0-141b2d26894e",
-        "edf7fe0f-666b-4e38-a872-9b6ea893691c",
-        "9a1f6e4b-faec-4154-97c8-ba8fa723c7df"
+        "9eb9a2e3-75ab-4915-bcd2-b9f5218cc55a",
+        "8e75fd21-b93a-456a-ba01-996f33d6b2fd",
+        "b7431079-16b5-4df8-b900-7fd7111c2bd9",
+        "baa9eec4-d147-4dfa-8779-692ebd6f9a66",
+        "dd8ab84b-6d22-4b92-b5cc-f40969e6c67a",
+        "eee30bcf-df08-4db5-810b-d52e2aef4d76",
+        "c4757ecb-5288-449b-8890-37334957fabb"
     ],
     "filterType": "GMSprite",
     "folderName": "Officer",

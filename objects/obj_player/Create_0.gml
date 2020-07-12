@@ -12,5 +12,5 @@ state = player_move
 
 // Used to apply damage exactly once
 damage_applied = false
-
+attacked = false
 remap_open = false

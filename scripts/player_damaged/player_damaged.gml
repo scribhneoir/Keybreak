@@ -1,4 +1,4 @@
-if (damage_applied == false)
+if (!damage_applied)
 {
 	// Set sprite
 	sprite_index = spr_player_damaged
@@ -28,3 +28,11 @@ if (damage_applied == false)
 	alarm[0] = 30
 	damage_applied = true
 }
+
+if (place_meeting(x, y + vspd, obj_solid))
+{
+	while (!place_meeting(x, y + sign(vspd), obj_solid))
+		y += sign(vspd);
+	vspd = 0;
+}
+y += vspd;

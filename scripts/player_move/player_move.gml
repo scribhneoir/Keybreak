@@ -7,7 +7,7 @@ vspd += grav;
 // Attacking
 if (ATTACK)
 {
-	
+	state = player_attack
 }
 
 // Jumping
@@ -16,6 +16,7 @@ if (place_meeting(x, y + 1, obj_solid) && (JUMP))
 	vspd = jump_height;
 	sprite_index = spr_player_jump
 }
+
 
 // Horizontal Collision
 if (place_meeting(x + hspd, y, obj_solid))
