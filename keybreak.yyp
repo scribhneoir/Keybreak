@@ -767,10 +767,18 @@
             }
         },
         {
+            "Key": "f832c5ec-038b-4380-aedd-f59ac69a9bb1",
+            "Value": {
+                "id": "662339de-d1a7-4597-90d5-ca674df8ea73",
+                "resourcePath": "sprites\\title_dupe\\title_dupe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fe7de2d8-14d2-49bf-9a4f-f03bd3ad33bd",
             "Value": {
                 "id": "abb67287-297c-4a50-8ba6-67d60ce7c4bf",
-                "resourcePath": "sprites\\sprite34\\sprite34.yy",
+                "resourcePath": "sprites\\title\\title.yy",
                 "resourceType": "GMSprite"
             }
         }
