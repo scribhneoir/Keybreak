@@ -9,5 +9,5 @@ if (attacked == true)
 if (pause == true){
 	pause = false
 	hspd = -old_hspeed
-	x +=2*hspd
+	x +=5*hspd
 }

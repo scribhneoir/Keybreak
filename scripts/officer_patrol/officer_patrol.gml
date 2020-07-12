@@ -21,6 +21,16 @@ if (place_meeting(x, y + vspd, obj_solid))
 }
 y += vspd;
 
+//attack if in range
+if(obj_player.state != player_damaged && obj_player.x > x - 60 && obj_player.x < x && sign(hspd) == -1 && obj_player.y > y - 30 &&obj_player.y < y + 30){
+	attack_dir = -1
+	state = officer_attack
+}
+if(obj_player.state != player_damaged && obj_player.x < x + 60 && obj_player.x > x && sign(hspd) == 1 && obj_player.y > y - 30 &&obj_player.y < y + 30){
+	attack_dir = 1
+	state = officer_attack
+}
+
 if (vspd == 0)
 	switch(sign(hspd))
 	{

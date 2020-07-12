@@ -1,5 +1,7 @@
 spd = 7
+hp = 2;
 
+attack_dir = 1
 old_hspeed = 1
 hspd = -1
 vspd = 0
