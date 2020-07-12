@@ -7,7 +7,7 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-
+        "14bb217b-6378-4093-aa24-d6754858f79c"
     ],
     "IsDnD": false,
     "layers": [
@@ -103,8 +103,8 @@
             "name": "Col",
             "id": "a6fd4817-adee-43d2-afe6-55beed954eab",
             "depth": 300,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 25,
+            "grid_y": 25,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -112,7 +112,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_7906BC98","id": "14bb217b-6378-4093-aa24-d6754858f79c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7906BC98","objId": "359c48ef-56e8-4ddb-85e6-ce7d82479cff","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 25,"y": 700}
             ],
             "layers": [
 
