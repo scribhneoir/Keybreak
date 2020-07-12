@@ -4,6 +4,12 @@ input_get()
 hspd = walk_dir * spd;
 vspd += grav;
 
+// Attacking
+if (ATTACK)
+{
+	
+}
+
 // Jumping
 if (place_meeting(x, y + 1, obj_solid) && (JUMP))
 {

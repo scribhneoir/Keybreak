@@ -13,12 +13,15 @@ if (damage_applied == false)
 	// Set proper index of CONTROLS to vk_nokey
 	if (curr_key.hp <= 0)
 	{
+		remove_key()
+		/*
 		curr_key = ds_list_find_value(Properties.KEY_DEATH_ORDER, 0)
 		ds_list_delete(Properties.KEY_DEATH_ORDER, 0)
 		ds_list_add(Properties.DEAD_CONTROLS, curr_key)
 		Properties.KEYS_REMAINING--
 		Properties.CONTROLS[curr_key.index] = vk_nokey
 		curr_key.draw = false
+		*/
 	}
 
 	// Set alarm to revert player state
