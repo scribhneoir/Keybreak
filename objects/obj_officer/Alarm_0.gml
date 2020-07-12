@@ -4,8 +4,9 @@ state = officer_patrol
 
 if (damage_applied == true)
 	damage_applied = false
-if (attacked == true)
+if (attacked == true){
 	attacked = false
+}
 if (pause == true){
 	pause = false
 	hspd = -old_hspeed

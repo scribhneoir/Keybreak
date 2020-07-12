@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "f3bf37d7-5365-4d52-8a3e-5edc760315c5",
+            "Value": {
+                "id": "1b1192ff-1a8e-4897-b9fa-e321eae397f2",
+                "resourcePath": "scripts\\officer_damaged\\officer_damaged.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "c673bf9a-3ec9-4984-969f-6ad46d51585e",
@@ -840,6 +848,7 @@
         "b7081c0a-c078-4f41-941a-a647e1801cb2",
         "19f5f2a3-a4be-4c0a-bb52-bca2c209da25",
         "27dde5d4-22ee-4dfe-8350-227d9fb61660",
+        "f3bf37d7-5365-4d52-8a3e-5edc760315c5",
         "0fc53476-832a-469f-b129-9a22cd99a16b",
         "5f1c0b59-9251-4071-a2f0-58f4b2ca9baf"
     ],
