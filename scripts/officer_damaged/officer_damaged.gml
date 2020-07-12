@@ -3,11 +3,11 @@ if (!damage_applied)
 	// Set sprite
 	if(sprite_index != spr_officer_damage_left && attack_dir == -1){
 		sprite_index = spr_officer_damage_left;
-		kback = -10
+		kback = -5
 	}
 	if(sprite_index != spr_officer_damage_right && attack_dir == 1){
 		sprite_index = spr_officer_damage_right;
-		kback = 10
+		kback = 5
 	}
 
 	hp --
