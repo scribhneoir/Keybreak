@@ -1,3 +1,6 @@
+clamp(x, 0, room_width - sprite_width)
+clamp(y, 0, room_height - sprite_height)
+
 // Increment to the next array index ('page') of text
 // next_page should only be set to true by the object which creates an obj_textbox instance
 if (next_page && char_count == string_length(text[page])) {

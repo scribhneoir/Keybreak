@@ -1,5 +1,4 @@
-my_text[0] = "This door is locked. Sacrifice a key to open it?"
-my_text[2] = "Use Key[ENTER]               Don't Use Key[SHIFT]"
+my_text[0] = "Use a key to open the door?\n\n  YES [ENTER]               NO [SHIFT] "
 
 active = false
 textbox = noone

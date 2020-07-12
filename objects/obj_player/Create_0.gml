@@ -1,6 +1,7 @@
 spd = 7
 
-walk_dir = 0
+face_dir = 1	// -1 or 1
+walk_dir = 0	// -1, 1, or 0
 hspd = 0
 vspd = 0
 

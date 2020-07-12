@@ -4,11 +4,13 @@ input_get()
 hspd = walk_dir * spd;
 vspd += grav;
 
+// Find direction for properly facing sprites
+if (walk_dir != 0)
+	face_dir = walk_dir
+
 // Attacking
 if (ATTACK)
-{
 	state = player_attack
-}
 
 // Interact with door
 if (place_meeting(x + sign(hspd), y, obj_door) && vspd == 0)
@@ -50,7 +52,7 @@ if (place_meeting(x, y + vspd, obj_solid))
 }
 y += vspd;
 
-
+	
 if (vspd == 0)
 	switch(walk_dir)
 	{

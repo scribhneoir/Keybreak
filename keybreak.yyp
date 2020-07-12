@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "668f399b-767c-4998-a368-852a622e8712",
+            "Value": {
+                "id": "931909ca-3291-41a8-a032-3d6a6f989810",
+                "resourcePath": "objects\\obj_teleport\\obj_teleport.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6c84de47-385c-4995-9630-b709084c2976",
             "Value": {
                 "id": "22695b3c-f5a4-424d-95e6-6fb2c3329586",

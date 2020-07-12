@@ -1,9 +1,10 @@
 if(!attacked){
-	// Set sprite
-	if(walk_dir == -1)
-		sprite_index = spr_player_punch_left
-	else
-		sprite_index = spr_player_punch_right
+	
+	switch (face_dir)
+	{
+		case -1: sprite_index = spr_player_punch_left; break;
+		case 1: sprite_index = spr_player_punch_right; break;
+	}
 
 	alarm[0] = 20
 	attacked = true
