@@ -1,8 +1,8 @@
 {
-    "id": "febd518a-3e5c-4cc6-a7dc-9bb753807d66",
+    "id": "e06d4676-c477-47ff-a073-c29fe02ac49d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "reassign_action",
+    "name": "state_paused",
     "IsCompatibility": false,
     "IsDnD": false
 }

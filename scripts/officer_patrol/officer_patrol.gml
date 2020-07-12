@@ -25,7 +25,7 @@ y += vspd;
 if (vspd == 0)
 	switch(sign(hspd))
 	{
-		case 1: sprite_index = spr_player_walk_right; break;
-		case -1: sprite_index = spr_player_walk_left; break;
-		case 0: sprite_index = spr_player_idle; break;
+		case 1: sprite_index = spr_officer_walk_right; break;
+		case -1: sprite_index = spr_officer_walk_left; break;
+		case 0: sprite_index = spr_officer_idle; break;
 	}

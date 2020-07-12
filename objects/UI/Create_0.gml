@@ -4,3 +4,5 @@ draw_set_colour(col)
 draw_set_font(font_main)
 GUI_x = 50
 GUI_y = 50
+
+paused = false

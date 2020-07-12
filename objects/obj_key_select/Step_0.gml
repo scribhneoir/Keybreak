@@ -11,13 +11,16 @@ if (obj_player.remap_open)
 		
 			// Add to the back of the health bar
 			ds_list_add(Properties.KEY_DEATH_ORDER, action)
+			action.draw = true
+			action.hp = 5
+			order_keys()
 		
-			//
+			// Remove from dead list
 			ds_list_delete(Properties.DEAD_CONTROLS, 0)
-		
+			
+			// Set key to recieve input
 			Properties.CONTROLS[action.index] = key_id
 		}
-	
 		else if (state == 1 && (key_id == ds_list_find_value(Properties.DEAD_CONTROLS, 0).key))
 			state++
 	}

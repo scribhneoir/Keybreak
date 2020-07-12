@@ -8,4 +8,3 @@ grav = 0.8
 jump_height = -15
 
 state = officer_patrol
-
