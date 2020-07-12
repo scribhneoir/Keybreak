@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "e9f7cc8b-06c5-43c9-a03b-f39c8a9f1271",
+            "Value": {
+                "id": "09242f50-e2ac-41be-a469-93a71145394e",
+                "resourcePath": "objects\\obj_title_dupe\\obj_title_dupe.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ea41ea88-6a1d-4fe4-b6aa-5344b3b3b300",
             "Value": {
                 "id": "bd6bb753-3556-4ab8-84d5-6d3cd01e8253",
