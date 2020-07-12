@@ -1,11 +1,12 @@
 text[0] = "Hello World"
+active = false
 
 page = 0	// The array index of text or my_text
 char_count = 0	// Text drawn in scrolling effect
 next_page = false	// Trigger for moving to next page, set by whatever object creates the textbox
 
 creator = noone	// The instance ID that created this textbox
-cr_name = noone // The name to display alongside text, if applicable
+//cr_name = noone // The name to display alongside text, if applicable
 
 x_cor = x - sprite_get_width(spr_textbox)/2
 y_cor = y + 30

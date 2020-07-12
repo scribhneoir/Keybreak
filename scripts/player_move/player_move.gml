@@ -10,6 +10,14 @@ if (ATTACK)
 	
 }
 
+// Interact with door
+if (place_meeting(x + sign(hspd), y, obj_door) && vspd == 0)
+{
+	var door = instance_nearest(x, y, obj_door)
+	door.active = true
+}
+
+
 // Jumping
 if (place_meeting(x, y + 1, obj_solid) && (JUMP))
 {
