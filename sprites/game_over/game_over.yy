@@ -2,7 +2,7 @@
     "id": "b138dd8c-3c1a-437a-aef7-68ab4879913c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite38",
+    "name": "game_over",
     "For3D": false,
     "HTile": false,
     "VTile": false,

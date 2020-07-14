@@ -1,4 +1,4 @@
-if (place_meeting(x - obj_player.face_dir, y, obj_player)) {
+if (place_meeting(x - obj_player.dir, y, obj_player)) {
 
 	// Create textbox
 	if (textbox == noone) {

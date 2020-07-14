@@ -1,4 +1,4 @@
-if (obj_player.remap_open)
+if (instance_exists(obj_player) && obj_player.remap_open)
 {
 	#region Transparant background
 	

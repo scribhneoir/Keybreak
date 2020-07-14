@@ -11,7 +11,7 @@
         "25700a87-9479-4bbc-9301-75fd2185d067"
     ],
     "filterType": "GMObject",
-    "folderName": "Title",
+    "folderName": "Title Screen",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

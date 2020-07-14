@@ -1,16 +1,23 @@
-spd = 7
-hp = 2;
+event_inherited()
 
+state = officer_patrol
+hp = 2
+hspd = -1
+old_hspeed = 1
+pause = false
+
+/*
+spd = 7
 kback = 10;
 attack_dir = 1
-old_hspeed = 1
-hspd = -1
+
+
 vspd = 0
 
 grav = 0.8
 jump_height = -15
 
-state = officer_patrol
+
 damage_applied = false
 attacked = false
-pause = false
+*/

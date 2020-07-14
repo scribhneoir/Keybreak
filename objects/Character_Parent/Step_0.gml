@@ -1,21 +1,18 @@
-sprite_index = spr_officer_KO;
+vspd += global.grav_strength;
 
-if(dir == 1)
-	image_index = 1
-
-//vspd += grav;
-hspd = 0
+if (hspd != 0)
+	dir = sign(hspd)
+	
+#region Collisions
 
 // Horizontal Collision
 if (place_meeting(x + hspd, y, obj_solid))
 {
-	while (!place_meeting(x+sign(hspd), y, obj_solid))
+	while (!place_meeting(x + sign(hspd), y, obj_solid))
 		x += sign(hspd);
-	old_hspeed = hspd
 	hspd = 0
-	state = officer_pause
 }
-
+x += hspd;
 
 // Vertical Collision
 if (place_meeting(x, y + vspd, obj_solid))
@@ -25,3 +22,7 @@ if (place_meeting(x, y + vspd, obj_solid))
 	vspd = 0;
 }
 y += vspd;
+
+#endregion
+
+script_execute(state)

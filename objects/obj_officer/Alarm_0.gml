@@ -1,5 +1,4 @@
-//@description end pause and switch direction
-// You can write your code in this editor
+///@description end pause and switch direction
 state = officer_patrol
 
 if (damage_applied == true)

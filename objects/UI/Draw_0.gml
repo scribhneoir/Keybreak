@@ -1,7 +1,7 @@
 // Healthbar head & key count
 draw_set_colour(col)
-draw_sprite(spr_healthbar_head, 0, GUI_x, GUI_y)
-draw_text_transformed(GUI_x - 13, GUI_y - 14, Properties.KEYS_REMAINING, 1.75, 1.75, 0)
+draw_sprite(spr_healthbar_head, 0, HB_head_x, HB_head_y)
+draw_text_transformed(HB_head_x - 13, HB_head_y - 14, global.KEYS_REMAINING, 1.75, 1.75, 0)
 
 if (paused)
 {
