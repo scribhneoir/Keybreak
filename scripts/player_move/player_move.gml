@@ -1,22 +1,25 @@
 input_get()
 
 // Set movement speed
-hspd = (RIGHT - LEFT) * spd
+if (vspd <= 0)
+	hspd = (RIGHT - LEFT) * spd
 
-if (DASH_LEFT || DASH_RIGHT)
+// Dashing
+if ((DASH_LEFT || DASH_RIGHT) && !midair)
 	state = player_dash
 	
 // Jumping
 if (!midair && JUMP)
 	vspd = jump_height
-	
+
+// Decrease jump faster if not held
 //if (!JUMP && !JUMP_HELD && (vspd < 0))
 else if (!JUMP_HELD && (vspd < 0))
 	vspd /= 2
 	
 // Attacking
 // Won't become true if holding jump and moving in a direction - why???
-if (ATTACK)
+if (ATTACK && (vspd <= 0))
 	state = player_attack
 
 // Interact with door
