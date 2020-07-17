@@ -1,9 +1,21 @@
 input_get()
 
 // Set movement speed
-hspd = (RIGHT - LEFT) * spd;
+hspd = (RIGHT - LEFT) * spd
 
+if (DASH_LEFT || DASH_RIGHT)
+	state = player_dash
+	
+// Jumping
+if (!midair && JUMP)
+	vspd = jump_height
+	
+//if (!JUMP && !JUMP_HELD && (vspd < 0))
+else if (!JUMP_HELD && (vspd < 0))
+	vspd /= 2
+	
 // Attacking
+// Won't become true if holding jump and moving in a direction - why???
 if (ATTACK)
 	state = player_attack
 
@@ -13,19 +25,16 @@ if (place_meeting(x + sign(hspd), y, obj_door) && vspd == 0)
 	var door = instance_nearest(x, y, obj_door)
 	door.active = true
 }
+
 //Get punched by officer
 if (place_meeting(x + sign(hspd), y, obj_officer) && obj_officer.state = officer_attack){
 	state = player_damaged
 	dir = obj_officer.dir
 }
 
-// Jumping
-if (place_meeting(x, y + 1, obj_solid) && (JUMP))
-	vspd = jump_height;
-
 #region Set Animation
 
-if (vspd == 0)
+if (!midair)
 	switch(sign(hspd))
 	{
 		case 1: sprite_index = spr_player_walk_right; break;

@@ -1,13 +1,15 @@
-///@param x
-///@param y
+///@param x_offset
+///@param y_offset
 ///@param duration
 
 /*	Used by children of Character_Parent for attacking
 	If duration <= 0, the instance will not automatically destroy itself
+	X and Y are coordinates relative to the creator
 */
 
-var dmg_obj = instance_create_layer(argument0, argument1, "Textboxes", obj_damage)
-
+var dmg_obj = instance_create_layer(x + argument0, y + argument1, "Textboxes", obj_damage)
+dmg_obj.x_offset = argument0
+dmg_obj.y_offset = argument1
 dmg_obj.creator = self
 dmg_obj.dmg = dmg
 

@@ -15,6 +15,15 @@ if (paused)
 }
 
 // Player Stats for debugging
-draw_text(250, 0, "state = " + script_get_name(obj_player.state))
-draw_text(250, 20, "x=" + string(obj_player.x) + "   y=" + string(obj_player.y) + "   dir=" + string(obj_player.dir))
-draw_text(250, 40, "hspd=" + string(obj_player.hspd) + "   vspd=" + string(obj_player.vspd))
+with (obj_player)
+{
+	draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true)
+	draw_text(250, 0, "state = " + script_get_name(state))
+	draw_text(250, 20, "x=" + string(x) + "   y=" + string(y) + "   dir=" + string(dir))
+	draw_text(250, 40, "hspd=" + string(hspd) + "   vspd=" + string(vspd))
+	draw_text(250, 60, "midair=" + (midair ? "true" : "false"))
+	
+	draw_text(450, 0, "JUMP=" + (JUMP ? "true" : "false") + "   JUMP_HELD=" + (JUMP_HELD ? "true" : "false"))
+	draw_text(450, 20, "ATTACK=" + (ATTACK ? "true" : "false"))
+	draw_text(450, 40, "DASH_RIGHT=" + (DASH_RIGHT ? "true" : "false") + "   DASH_LEFT=" + (DASH_LEFT ? "true" : "false") + "   alarm[1]=" + string(alarm_get(1)))
+}

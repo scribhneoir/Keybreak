@@ -4,6 +4,16 @@ TOGGLE_PAUSE = keyboard_check_pressed(vk_escape)	// Not functional
 
 // CONTROLS
 JUMP = keyboard_check_pressed(ord(global.CONTROLS[0]))
+JUMP_HELD = keyboard_check(ord(global.CONTROLS[0]))
 ATTACK = keyboard_check_pressed(ord(global.CONTROLS[1]))
 RIGHT = keyboard_check(ord(global.CONTROLS[2]))
 LEFT = keyboard_check(ord(global.CONTROLS[3]))
+
+DASH_TIMER_RIGHT = keyboard_check_pressed(ord(global.CONTROLS[2]))
+DASH_TIMER_LEFT = keyboard_check_pressed(ord(global.CONTROLS[3]))
+
+DASH_RIGHT = (alarm_get(1) > 0) && DASH_TIMER_RIGHT
+DASH_LEFT = (alarm_get(1) > 0) && DASH_TIMER_LEFT
+
+if ((alarm_get(1) == -1) && (DASH_TIMER_RIGHT || DASH_TIMER_LEFT))
+	alarm[1] = quick_input_window
