@@ -13,3 +13,8 @@ if (paused)
 	draw_set_color(c_white)
 	draw_text(room_width/2 - 20, room_height/2, "PAUSED")
 }
+
+// Player Stats for debugging
+draw_text(250, 0, "state = " + script_get_name(obj_player.state))
+draw_text(250, 20, "x=" + string(obj_player.x) + "   y=" + string(obj_player.y) + "   dir=" + string(obj_player.dir))
+draw_text(250, 40, "hspd=" + string(obj_player.hspd) + "   vspd=" + string(obj_player.vspd))

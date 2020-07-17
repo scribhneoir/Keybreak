@@ -3,6 +3,8 @@ event_inherited()
 state = player_move
 remap_open = false
 
+i_frames = 10
+
 /*
 // Control vars
 spd = 7

@@ -7,7 +7,7 @@ if (paused)
 } else
 {
 	player_state = obj_player.state
-	obj_player.state = state_paused
+	obj_player.state = state_default
 	if (instance_exists(obj_officer))
 		instance_deactivate_object(obj_officer)
 	paused = true

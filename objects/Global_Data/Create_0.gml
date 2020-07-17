@@ -54,4 +54,4 @@ temp_key.key_id = starting_walk_left
 
 // Start game at end of initialization
 if (room == rm_create)
-	room_goto(rm_title)
+	room_goto(rm_test)	//room_goto(rm_title)

@@ -1,5 +1,7 @@
+// Apply Gravity
 vspd += global.grav_strength;
 
+// Set direction instance is facing
 if (hspd != 0)
 	dir = sign(hspd)
 	

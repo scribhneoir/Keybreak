@@ -1,14 +1,16 @@
-// This is the parent of all objects that have states, move, and collide
-state = state_paused
+/*	This is the parent of all objects that have states, move, and collide
+*/	
+state = state_default
 
-// Control vars
+// Control Vars
 spd = 7
 dir = 1	// 1 = facing right, -1 = facing left
-kback = 10
-jump_height = -15
+kback = 10	// Always positive
+jump_height = -15	// Always negative
 hspd = 0
 vspd = 0
 
-// Used to apply damage exactly once
-damage_applied = false
+// Combat Vars
+dmg = 1
+damage_applied = false	// Used to apply damage exactly once
 attacked = false
