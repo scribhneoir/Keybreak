@@ -16,3 +16,6 @@ target_vspd = 0
 dmg = 1
 damage_applied = false	// Used to apply damage exactly once
 attacked = false	// Used to attack exactly once
+
+
+momentum = 0.25

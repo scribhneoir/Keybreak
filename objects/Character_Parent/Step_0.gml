@@ -18,12 +18,20 @@ script_execute(state)
 
 // Horizontal Collision
 if (midair)
-	hspd += (target_hspd - hspd) * 0.05		// Maintain more momentum while in the air
-else if (hspd == 0)
-	hspd += (target_hspd - hspd) * 0.15		// Momentum builds slowly from a standstill
-else
-	hspd += (target_hspd - hspd) * 0.3		// Stop momentum quickly for precise platforming
+	momentum = 0.05
+else if (abs(hspd) < abs(spd))
+	momentum = 0.1
 	
+hspd += (target_hspd - hspd) * momentum
+/*
+if (midair)
+	hspd += (target_hspd - hspd) * 0.05		// Maintain more momentum while in the air
+else if (abs(hspd) < abs(spd))
+	hspd += (target_hspd - hspd) * 0.1 		// Momentum builds slowly from a standstill
+else
+	hspd += (target_hspd - hspd) * 0.25		// Stop momentum quickly for precise platforming
+*/
+
 var col_hspd = round(hspd)
 if (place_meeting(x + col_hspd, y, obj_solid))
 {

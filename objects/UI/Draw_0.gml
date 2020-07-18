@@ -22,6 +22,7 @@ with (obj_player)
 	draw_text(250, 20, "x=" + string(x) + "   y=" + string(y) + "   dir=" + string(dir))
 	draw_text(250, 40, "target_hspd=" + string(target_hspd) + "   target_vspd=" + string(target_vspd))
 	draw_text(250, 60, "midair=" + (midair ? "true" : "false"))
+	draw_text(250, 80, "momentum=" + string(momentum))
 	
 	draw_text(500, 0, "JUMP=" + (JUMP ? "true" : "false") + "   JUMP_HELD=" + (JUMP_HELD ? "true" : "false"))
 	draw_text(500, 20, "ATTACK=" + (ATTACK ? "true" : "false"))
