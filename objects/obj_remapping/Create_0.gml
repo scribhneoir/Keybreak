@@ -1,6 +1,6 @@
 // Where object appears for reassigning
-x = room_width/2 - sprite_width/2
-y = room_height/2 - sprite_height/2
+x = UI.HB_head_x
+y = UI.HB_head_y + 120
 
 // Dimensions of keys on sprite
 key_size = 21
@@ -21,17 +21,17 @@ for (i = 0; i < 26; i++)
 	var ycor = y
 	if (i <= 9)
 	{
-		 xcor = x + x1 + (i * (key_size + 2))
+		 xcor += x1 + (i * (key_size + 2))
 		 ycor += y1
 	}
 	else if (i <= 18)
 	{
-		 xcor = x + x2 + ((i%10) * (key_size + 2))
+		 xcor += x2 + ((i%10) * (key_size + 2))
 		 ycor += y2
 	}
 	else if (i <= 25)
 	{
-		 xcor = x + x3 + ((i%19) * (key_size + 2))
+		 xcor += x3 + ((i%19) * (key_size + 2))
 		 ycor += y3
 	}
 	

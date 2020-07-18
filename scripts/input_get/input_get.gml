@@ -10,8 +10,8 @@ RIGHT = keyboard_check(ord(global.CONTROLS[2]))
 LEFT = keyboard_check(ord(global.CONTROLS[3]))
 #region dashing
 
-DASH_TIMER_RIGHT = keyboard_check_pressed(ord(global.CONTROLS[2]))
-DASH_TIMER_LEFT = keyboard_check_pressed(ord(global.CONTROLS[3]))
+DASH_TIMER_RIGHT = keyboard_check_pressed(ord(global.CONTROLS[2])) && !LEFT
+DASH_TIMER_LEFT = keyboard_check_pressed(ord(global.CONTROLS[3])) && !RIGHT
 DASH_RIGHT = (alarm_get(2) > 0) && DASH_TIMER_RIGHT
 DASH_LEFT = (alarm_get(1) > 0) && DASH_TIMER_LEFT
 if ((alarm_get(2) == -1) && DASH_TIMER_RIGHT)

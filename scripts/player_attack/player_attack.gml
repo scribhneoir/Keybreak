@@ -22,5 +22,7 @@ else
 	image_index = 2	// Stay on contact frame
 	
 // Pause to attack if standing, otherwise continue jump	
-if (!midair)
-	hspd = 0
+if (midair)
+	target_hspd = dir * spd
+else
+	target_hspd = hspd/2

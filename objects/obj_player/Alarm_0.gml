@@ -8,7 +8,7 @@ if (attacked == true)
 if (dashed == true)
 {
 	dashed = false
-	hspd = 0
+	target_hspd = 0
 }
 	
 // Set state back last so nothing gets confused
