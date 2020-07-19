@@ -1,11 +1,16 @@
 input_get()
 
 // Set movement speed
+target_hspd = (RIGHT - LEFT) * spd
+
+if (midair)
+	hspd *= 1.2
+/*	
 if (midair)
 	target_hspd = hspd * 0.75
 else
 	target_hspd = (RIGHT - LEFT) * spd
-
+*/
 // Dashing
 if ((DASH_LEFT || DASH_RIGHT) && !midair)
 	state = player_dash

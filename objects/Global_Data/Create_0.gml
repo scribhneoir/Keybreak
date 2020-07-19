@@ -18,7 +18,7 @@ global.DEAD_CONTROLS = ds_list_create()	// List of dead keys
 #endregion
 #region Global Variables
 
-global.grav_strength = 0.8
+global.grav_strength = 1
 global.key_hp = 2	// Individual key health
 global.KEYS_REMAINING = 26	// Number of keys
 

@@ -18,9 +18,11 @@ script_execute(state)
 
 // Horizontal Collision
 if (midair)
-	momentum = 0.05
-else if (abs(hspd) < abs(spd))
-	momentum = 0.1
+	momentum = 0.55	// Higher values means lighter jumps
+else if (abs(target_hspd) < abs(spd))
+	momentum = 0.25	// Higher values means faster stops
+else
+	momentum = 0.15	// Higher values means faster starts
 	
 hspd += (target_hspd - hspd) * momentum
 /*
