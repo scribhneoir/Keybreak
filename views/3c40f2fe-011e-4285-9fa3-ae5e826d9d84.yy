@@ -7,7 +7,8 @@
         "10558bf9-119f-4d53-9c62-f618194631b5",
         "668f399b-767c-4998-a368-852a622e8712",
         "52cc35ad-9d2b-417e-9628-f6613b5741c6",
-        "9334373a-1cc9-46b8-8a85-c60c607053ac"
+        "9334373a-1cc9-46b8-8a85-c60c607053ac",
+        "359c48ef-56e8-4ddb-85e6-ce7d82479cff"
     ],
     "filterType": "GMObject",
     "folderName": "Utility Objects",

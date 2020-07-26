@@ -1,13 +1,17 @@
-/* Set sprites
+// Set sprites
 switch(dir)
 {
 	case 1: sprite_index = spr_player_dash_right; break;
 	case -1: sprite_index = spr_player_dash_left; break;
-}*/
+}
 
+// Set movement conditions
+target_hspd = dir * spd * 2.5
+momentum = 1
+
+// Set timer for ending the dash
 if (!dashed)
 {
-	hspd = dir * spd * 3
 	dashed = true
-	alarm[0] = 10
+	alarm[0] = 12
 }

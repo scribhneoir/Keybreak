@@ -9,6 +9,12 @@ if (dashed == true)
 {
 	dashed = false
 	target_hspd = 0
+	
+	if (place_meeting(x, y - 25, obj_solid) || place_meeting(x, y - 50, obj_solid))
+	{
+		state = player_crouch
+		exit
+	}
 }
 	
 // Set state back last so nothing gets confused

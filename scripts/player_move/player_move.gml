@@ -1,48 +1,49 @@
 input_get()
 
-// Set movement speed
+// Set target speed
 target_hspd = (RIGHT - LEFT) * spd
 
-if (midair)
-	hspd *= 1.2
-/*	
-if (midair)
-	target_hspd = hspd * 0.75
+// Configure acceleration
+if (abs(target_hspd) < abs(hspd))
+	momentum = 0.27	// Higher values means faster stops
 else
-	target_hspd = (RIGHT - LEFT) * spd
-*/
+	momentum = 0.22	// Higher values means faster starts
+	
+// Interact with door
+if (place_meeting(x + dir, y, Interactive_Parent))
+{
+	var temp = instance_place(x + dir, y, Interactive_Parent)
+	temp.active = true
+}
+
+#region State Changes
+
 // Dashing
 if ((DASH_LEFT || DASH_RIGHT) && !midair)
 	state = player_dash
-	
+
 // Jumping
 if (!midair && JUMP)
-	target_vspd = jump_height
-
-// Decrease jump faster if not held
-//if (!JUMP && !JUMP_HELD && (vspd < 0))
-else if (!JUMP_HELD && (target_vspd < 0))
-	target_vspd /= 2	// global.grav_strength = 0.8... should maybe use multiples??
-	
-// Attacking
-// Won't become true if holding jump and moving in a direction - why???
-if (ATTACK /*&& (target_vspd <= 0)*/)
-	state = player_attack
-
-/***** NEED TO BE ABSTRACTED
-// Interact with door
-if (place_meeting(x + sign(hspd), y, obj_door) && vspd == 0)
 {
-	var door = instance_nearest(x, y, obj_door)
-	door.active = true
+	hspd_before_jump = round(hspd)
+	target_vspd = jump_height
+	state = player_airborne
+	exit
 }
 
+/***** NEEDS TO BE ABSTRACTED
 //Get punched by officer
 if (place_meeting(x + sign(hspd), y, obj_officer) && obj_officer.state = officer_attack){
-	state = player_damaged
 	dir = obj_officer.dir
+	state = player_damaged
 }
 ******/
+
+// Attacking
+if (ATTACK)
+	state = player_attack
+	
+#endregion
 
 #region Set Animation
 
