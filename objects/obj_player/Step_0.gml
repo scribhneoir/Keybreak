@@ -12,13 +12,16 @@ midair = !place_meeting(x, y + 1, obj_solid)
 // Main functionality
 script_execute(state)
 
+// Move towards target speed in increments set by momentum
+hspd += (target_hspd - hspd) * momentum
+
 #region Collisions
 
 // Horizontal Collision
-hspd += (target_hspd - hspd) * momentum
 var col_hspd = round(hspd)
 if (place_meeting(x + col_hspd, y, obj_solid))
 {
+	
 	while (!place_meeting(x + sign(col_hspd), y, obj_solid))
 		x += sign(col_hspd)
 	col_hspd = 0
