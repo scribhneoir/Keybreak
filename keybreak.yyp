@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "2bd8b950-a975-4143-95d6-f679304eb700",
+            "Value": {
+                "id": "2f7111ef-0798-461d-94f3-0ef0dac97465",
+                "resourcePath": "objects\\obj_climable_wall\\obj_climable_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2d0eece0-f23f-4ffc-b801-deb79bbb04e2",
             "Value": {
                 "id": "b3ca1132-25cd-4ef6-b1df-fda114f15f34",
@@ -404,6 +412,14 @@
                 "id": "7a4f01f8-469d-49aa-9bb3-b504d3223dc9",
                 "resourcePath": "views\\5c9b0ae7-0f12-4c1e-b1ce-2eb9de577942.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5d270f42-1ec4-4fa1-ab25-8c8e9816e30f",
+            "Value": {
+                "id": "a43e4abc-3624-4b7a-b2d9-bc1a32dbe5af",
+                "resourcePath": "sprites\\spr_climable_wall\\spr_climable_wall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -927,6 +943,14 @@
             }
         },
         {
+            "Key": "d95901c1-cafb-4235-a5dc-c3ea5d13c345",
+            "Value": {
+                "id": "73bb08dc-ab64-4618-9a70-df766668b8e0",
+                "resourcePath": "scripts\\player_climb\\player_climb.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dd8ab84b-6d22-4b92-b5cc-f40969e6c67a",
             "Value": {
                 "id": "0da4ccc3-7d08-48c9-b556-a6d73ae93a43",
@@ -1081,6 +1105,7 @@
         "3e5e0238-1c71-4092-8d15-f09284b179d4",
         "67025a1f-bb5c-4691-b1c3-2b0b97a22e53",
         "ff7b7a13-8e2a-42f1-8064-586dd620a203",
+        "d95901c1-cafb-4235-a5dc-c3ea5d13c345",
         "b7081c0a-c078-4f41-941a-a647e1801cb2",
         "19f5f2a3-a4be-4c0a-bb52-bca2c209da25",
         "27dde5d4-22ee-4dfe-8350-227d9fb61660",

@@ -1,7 +1,7 @@
 input_get()
 
 // Set target speed
-target_hspd = (RIGHT - LEFT) * spd
+target_hspd = (RIGHT - LEFT) * walk_spd
 
 // Configure acceleration
 if (abs(target_hspd) < abs(hspd))
@@ -9,7 +9,7 @@ if (abs(target_hspd) < abs(hspd))
 else
 	momentum = 0.22	// Higher values means faster starts
 	
-// Interact with door
+// Interact with static
 if (place_meeting(x + dir, y, Interactive_Parent))
 {
 	var temp = instance_place(x + dir, y, Interactive_Parent)
@@ -29,7 +29,9 @@ if (!midair && JUMP)
 	target_vspd = jump_height
 	state = player_airborne
 	exit
-}
+} 
+else if (midair)
+	state = player_airborne
 
 /***** NEEDS TO BE ABSTRACTED
 //Get punched by officer

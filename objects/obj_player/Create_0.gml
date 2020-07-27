@@ -1,8 +1,10 @@
 state = player_move
 
 // Control Vars
-spd = 8
-momentum = 0.25	// The percentage per step that hspd will approach target_hspd
+walk_spd = 9
+jump_spd = 7
+climb_spd = 6
+momentum = 0.22	// The percentage per step that hspd will approach target_hspd
 jump_height = -17	// Always negative
 quick_input_window = 15
 hspd = 0

@@ -6,7 +6,7 @@ switch(dir)
 }
 
 // Set movement conditions
-target_hspd = dir * spd * 2.5
+target_hspd = dir * walk_spd * 2.5
 momentum = 1
 
 // Set timer for ending the dash

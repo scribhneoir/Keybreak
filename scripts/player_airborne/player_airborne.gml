@@ -1,20 +1,5 @@
 input_get()
 
-// Revert state
-if (!midair)
-{
-	state = player_move
-	exit
-}
-
-// Can attack while midair
-// Won't become true if holding jump and a direction - why???
-if (ATTACK)
-{
-	state = player_attack
-	exit
-}
-
 // Animation
 switch(dir)
 {
@@ -23,7 +8,7 @@ switch(dir)
 }
 
 // Default momentum
-target_hspd = (RIGHT - LEFT) * spd * 1.1
+target_hspd = (RIGHT - LEFT) * jump_spd
 momentum = 0.7
 
 // If player does not have horizontal momentum in jump they can only gain it slowly
@@ -42,3 +27,21 @@ else if (sign(target_hspd) != sign(hspd_before_jump))
 // Limit jump if button is not held
 if ((target_vspd <= 0) && !JUMP_HELD)
 	target_vspd /= global.grav_strength * 2.5
+	
+
+#region State Changes
+
+// Climbing
+if (place_meeting(x + dir, y, obj_climable_wall))
+	state = player_climb
+	
+// Can attack while midair
+// Won't become true if holding jump and a direction - why???
+if (ATTACK)
+	state = player_attack
+
+// Revert state
+if (!midair)
+	state = player_move
+
+#endregion
