@@ -1,27 +1,5 @@
 sprite_index = spr_officer_KO;
-
-if(dir == 1)
+if (dir == 1)
 	image_index = 1
 
-//vspd += grav;
-hspd = 0
-
-// Horizontal Collision
-if (place_meeting(x + hspd, y, obj_solid))
-{
-	while (!place_meeting(x+sign(hspd), y, obj_solid))
-		x += sign(hspd);
-	old_hspeed = hspd
-	hspd = 0
-	state = officer_pause
-}
-
-
-// Vertical Collision
-if (place_meeting(x, y + vspd, obj_solid))
-{
-	while (!place_meeting(x, y + sign(vspd), obj_solid))
-		y += sign(vspd);
-	vspd = 0;
-}
-y += vspd;
+target_hspd = 0

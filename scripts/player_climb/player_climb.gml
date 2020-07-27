@@ -9,7 +9,8 @@ if (JUMP)
 {
 	target_vspd = jump_height
 	target_hspd = dir * jump_spd * -1
-	hspd_before_jump = round(target_vspd)
+	hspd_before_jump = round(target_hspd)
+	wall_jump = true
 	state = player_airborne
 	exit
 }

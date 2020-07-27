@@ -18,8 +18,8 @@ global.DEAD_CONTROLS = ds_list_create()	// List of dead keys
 #endregion
 #region Global Variables
 
-global.grav_strength = 1.1	// Increase of vspd per step when falling
-global.max_vspd = 30	// Max fall speed
+global.grav_strength = 1.3	// Increase of vspd per step when falling
+global.max_vspd = 20	// Max fall speed
 global.key_hp = 2	// Individual key health
 global.KEYS_REMAINING = 26	// Number of keys
 

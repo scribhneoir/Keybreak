@@ -1,11 +1,11 @@
 state = player_move
 
 // Control Vars
-walk_spd = 9
-jump_spd = 7
+walk_spd = 7
+jump_spd = 9
 climb_spd = 6
 momentum = 0.22	// The percentage per step that hspd will approach target_hspd
-jump_height = -17	// Always negative
+jump_height = -18	// Always negative
 quick_input_window = 15
 hspd = 0
 target_hspd = 0
@@ -13,6 +13,8 @@ target_vspd = 0
 
 
 hspd_before_jump = 0	// Used to carry speed into jumps
+wall_jump = false
+jump_float = false
 
 // Combat Vars
 dmg = 1

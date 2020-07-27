@@ -1,8 +1,8 @@
 draw_set_color(c_white)	// Set default color to white
 
 // Draw textbox (Background sprite + rectangle outline)
-draw_rectangle(x_cor - border_w, y_cor - border_w, x_cor + box_width + border_w, y_cor + box_height + border_w, 0)
-draw_sprite(spr_textbox, 0, x_cor, y_cor)
+//draw_rectangle(x_cor - border_w, y_cor - border_w, x_cor + box_width + border_w, y_cor + box_height + border_w, 0)
+draw_sprite(spr_textbox, 0, x, y)
 
 
 text_part = string_copy(text[page], 1, char_count)	// Amount of text to display for scrolling effect

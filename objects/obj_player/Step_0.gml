@@ -1,5 +1,5 @@
 // Apply Gravity
-if (target_vspd < global.max_vspd)
+if ((target_vspd < global.max_vspd) && !jump_float)
 	target_vspd += global.grav_strength
 
 // Set direction instance is facing

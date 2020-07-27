@@ -26,4 +26,5 @@ with (obj_player)
 	draw_text(500, 0, "JUMP=" + (JUMP ? "true" : "false") + "   JUMP_HELD=" + (JUMP_HELD ? "true" : "false"))
 	draw_text(500, 20, "ATTACK=" + (ATTACK ? "true" : "false"))
 	draw_text(500, 40, "DASH_RIGHT=" + (DASH_RIGHT ? "true" : "false") + "   DASH_LEFT=" + (DASH_LEFT ? "true" : "false") + "   alarm[1]=" + string(alarm_get(1)))
+	draw_text(500, 60, "jump_float=" + (jump_float ? "true" : "false"))
 }

@@ -7,9 +7,22 @@ switch(dir)
 	case -1: sprite_index = spr_player_jump_left; break;
 }
 
+
+if ((target_vspd <= 0) && (target_vspd + global.grav_strength > 0) && !jump_float)
+{
+	jump_float = true
+	alarm[3] = 4
+}
+
+
+
+
 // Default momentum
 target_hspd = (RIGHT - LEFT) * jump_spd
-momentum = 0.7
+momentum = 0.01
+
+if (wall_jump)
+	momentum = 0.25
 
 // If player does not have horizontal momentum in jump they can only gain it slowly
 if (hspd_before_jump == 0)
@@ -45,3 +58,6 @@ if (!midair)
 	state = player_move
 
 #endregion
+
+if (state != player_airborne)
+	wall_jump = false
