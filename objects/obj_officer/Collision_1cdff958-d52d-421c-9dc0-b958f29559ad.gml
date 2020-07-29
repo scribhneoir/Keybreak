@@ -1,5 +1,5 @@
 /// @description Take Damage
-if (id != other.creator && damage_applied = false)
+if (id != other.creator && damage_applied = false && state != officer_KO)
 {
 	hp -= other.dmg
 	

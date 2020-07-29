@@ -19,6 +19,25 @@ hspd += (target_hspd - hspd) * momentum
 
 // Horizontal Collision
 var col_hspd = round(hspd)
+var sld = instance_place(x + col_hspd, y, obj_solid)	// Stairs
+if (sld != noone)
+{
+	// Check if there is space to step up
+	if (bbox_bottom - sld.bbox_top <= 25 && instance_place(sld.x, y - sld.sprite_height, obj_solid) == noone)
+		y -= (bbox_bottom - sld.bbox_top) + 1
+	else
+	{
+		while (!place_meeting(x + sign(col_hspd), y, obj_solid))
+			x += sign(col_hspd)
+		col_hspd = 0
+		hspd = 0
+	}
+}
+x += col_hspd
+
+/* Keep this in case of a problem with stairs
+// Horizontal Collision
+var col_hspd = round(hspd)
 if (place_meeting(x + col_hspd, y, obj_solid))
 {
 	
@@ -28,6 +47,7 @@ if (place_meeting(x + col_hspd, y, obj_solid))
 	hspd = 0
 }
 x += col_hspd
+*/
 
 // Vertical Collision
 var col_vspd = round(target_vspd)

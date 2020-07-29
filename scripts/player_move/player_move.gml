@@ -20,7 +20,11 @@ if (place_meeting(x + dir, y, Interactive_Parent))
 
 // Dashing
 if ((DASH_LEFT || DASH_RIGHT) && !midair)
+{
 	state = player_dash
+	alarm[0] = dash_length
+	exit
+}
 
 // Jumping
 if (!midair && JUMP)
