@@ -1,6 +1,5 @@
 // Universal vars for all states - these are the defaults
 state = player_move
-walk_spd = 7
 dir = 1	// 1 = facing right, -1 = facing left
 momentum = 0.22	// Percentage per step that hspd will approach target_hspd
 hspd = 0	// These speeds are set to other speed vars in given events. Default to 0
@@ -9,6 +8,13 @@ target_vspd = 0
 midair = false	// Do we need this???
 remap_open = false	// Move to UI object later???
 
+#region Default state / walking vars
+
+walk_spd = 7
+starting_momentum = 0.22	// Higher values means faster starts
+stopping_momentum = 0.27	// Higher values means faster stops
+
+#endregion
 #region Jumping Vars
 
 jump_spd = 9

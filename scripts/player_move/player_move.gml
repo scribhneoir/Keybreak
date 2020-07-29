@@ -1,30 +1,14 @@
 input_get()
 
-// Set target speed
-target_hspd = (RIGHT - LEFT) * walk_spd
+// Walking
+target_hspd = (RIGHT - LEFT) * walk_spd	// Set target speed
 
-// Configure acceleration
-if (abs(target_hspd) < abs(hspd))
-	momentum = 0.27	// Higher values means faster stops
-else
-	momentum = 0.22	// Higher values means faster starts
-	
-// Interact with static
-if (place_meeting(x + dir, y, Interactive_Parent))
-{
-	var temp = instance_place(x + dir, y, Interactive_Parent)
-	temp.active = true
-}
+if (abs(target_hspd) < abs(hspd))	// Set slowing down momentum
+	momentum = stopping_momentum
+else								// Set speeding up momentum
+	momentum = starting_momentum	
 
 #region State Changes
-
-// Dashing
-if ((DASH_LEFT || DASH_RIGHT) && !midair)
-{
-	state = player_dash
-	alarm[0] = dash_length
-	exit
-}
 
 // Jumping
 if (!midair && JUMP)
@@ -32,24 +16,34 @@ if (!midair && JUMP)
 	hspd_before_jump = round(hspd)
 	target_vspd = jump_height
 	state = player_airborne
-	exit
-} 
+	//exit
+}  
 else if (midair)
+{
+	hspd_before_jump = round(hspd)
 	state = player_airborne
-
-/***** NEEDS TO BE ABSTRACTED
-//Get punched by officer
-if (place_meeting(x + sign(hspd), y, obj_officer) && obj_officer.state = officer_attack){
-	dir = obj_officer.dir
-	state = player_damaged
 }
-******/
 
 // Attacking
 if (ATTACK)
 	state = player_attack
+
+// Dashing
+if ((DASH_LEFT || DASH_RIGHT) && !midair)
+{
+	state = player_dash
+	alarm[0] = dash_length
+	//exit
+}
 	
 #endregion
+
+// Interact with static
+if (place_meeting(x + dir, y, Interactive_Parent))
+{
+	var temp = instance_place(x + dir, y, Interactive_Parent)
+	temp.active = true
+}
 
 #region Set Animation
 

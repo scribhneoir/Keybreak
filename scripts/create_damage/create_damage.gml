@@ -2,7 +2,7 @@
 ///@param y_offset
 ///@param duration
 
-/*	Used by children of Character_Parent for attacking
+/*	Used by everything for attacking
 	If duration <= 0, the instance will not automatically destroy itself
 	X and Y are coordinates relative to the creator
 */

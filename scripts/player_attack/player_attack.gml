@@ -20,7 +20,6 @@ if (!attacked)
 
 else
 	image_index = 2	// Stay on contact frame
-
-
+	
 if (!midair)
-	target_hspd = 0
+		target_hspd = 0

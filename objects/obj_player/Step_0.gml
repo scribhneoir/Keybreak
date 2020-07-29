@@ -35,6 +35,17 @@ if (sld != noone)
 }
 x += col_hspd
 
+// Vertical Collision
+var col_vspd = round(target_vspd)
+if (place_meeting(x, y + col_vspd, obj_solid))
+{
+	while (!place_meeting(x, y + sign(col_vspd), obj_solid))
+		y += sign(col_vspd)
+	col_vspd = 0
+	target_vspd = 0
+}
+y += col_vspd
+
 /* Keep this in case of a problem with stairs
 // Horizontal Collision
 var col_hspd = round(hspd)
@@ -47,7 +58,6 @@ if (place_meeting(x + col_hspd, y, obj_solid))
 	hspd = 0
 }
 x += col_hspd
-*/
 
 // Vertical Collision
 var col_vspd = round(target_vspd)
@@ -59,6 +69,7 @@ if (place_meeting(x, y + col_vspd, obj_solid))
 	target_vspd = 0
 }
 y += col_vspd
+*/
 
 #endregion
 
